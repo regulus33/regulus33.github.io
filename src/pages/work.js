@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import anything from '../images/gatsby-icon.png'
+import artThumb from '../images/paintings/ghost_lady.jpg'
+
 
 const imageStyle = (src) => {
   return(
@@ -17,15 +19,7 @@ const imageStyle = (src) => {
 }
 
 const images = [
-  anything,
-  anything,
-  anything,
-  anything,
-  anything,
-  anything,
-  anything,
-  anything,
-  anything,
+  [artThumb, "paintings & drawings"]
 ]
 
 const Work = () => (
@@ -33,7 +27,7 @@ const Work = () => (
     <div style={{display: "flex", flexWrap: "wrap"}}>
       {
         images.map((x)=>{
-          return <div className={"project-card"} style={imageStyle(anything)}>Pillow Man</div>
+          return <a href="/paintings"><div className={"project-card"} style={imageStyle(x[0])}>{x[1]}</div></a>
         })
       }
     </div>
