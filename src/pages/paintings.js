@@ -58,12 +58,14 @@ const images = [
 
 const Work = () => (
   <Layout>
-    <div style={{display: "flex", flexWrap: "wrap"}}>
+    <div style={{display: "flex", flexWrap: "wrap", justifyContent: 'center', backgroundColor: 'black'}}>
+      <div style={{width:10}}></div>
       {
         images.map((x)=>{
           return <div className={"project-card"} style={imageStyle(x[0])}>{x[1]}</div>
         })
       }
+    <div style={{width:10}}></div>
     </div>
   </Layout>
 )
