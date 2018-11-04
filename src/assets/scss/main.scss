@@ -50,10 +50,55 @@
 
 
 
-	.project-card {
-		margin: 50px
+	div.project-card {
+		margin: 50px;
+		transition-property: box-shadow, height, width;
+		transition-duration: .2s;
+		transition-timing-function: ease-in;
+	}
+	
+
+	div#pageWrapper {
+    	background-color: white;
 	}
 
-	div#wrapper {
-    // background-color: beige;
+	div.project-card:hover {
+		box-shadow: 1px 1px 1px .7px rgb(120, 133, 153);
+		height: 500px !important;
+		width: 500px !important;
 	}
+	#paintingTitle {
+		color: grey;
+	}
+
+	.artTalk {
+		color: black;
+	}
+
+	.artTalk h3 {
+		margin-top: 20px;
+		color: black;
+	}
+
+	#art {
+		max-width: 400px;
+	}
+
+	.workLink {
+		height: 300px;
+	}
+
+	.invert {
+		transition-property: filter;
+		transition-duration: .6s;
+		transition-timing-function: ease-in;
+	}
+
+	.invert:hover {
+		filter: invert(1)
+	}
+
+
+
+
+	

@@ -2,10 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import anything from '../images/gatsby-icon.png'
-
 import anatomy from '../images/paintings/anatomy.jpeg'
 import aries from '../images/paintings/aries.jpg'
-
 import bill_gates_and_chris from '../images/paintings/bill_gates_and_chris.jpg'
 import cacteyes from '../images/paintings/cacteyes.jpg'
 import cancer from '../images/paintings/cancer.jpg'
@@ -21,6 +19,9 @@ import silver_key from '../images/paintings/silver_key.jpeg'
 import site_logo from '../images/paintings/site_logo.jpeg'
 import taurus from '../images/paintings/taurus.jpg'
 import tiger_leap from '../images/paintings/tiger_leap.jpeg'
+import light from '../images/paintings/light.png'
+import us from '../images/paintings/us.png'
+import god from '../images/paintings/god.jpg'
 
 
 const imageStyle = (src) => {
@@ -38,32 +39,41 @@ const imageStyle = (src) => {
 
 const images = [
   // [bill_gates_and_chris, "paintings & drawings"],
-  [aries, "Aries"],
-  [taurus, "Taurus"],
-  [gemini, "gemini"],
-  [cancer, "Cancer"],
-  [scorpio, "paintings & drawings"],
-  [dreams, "dreams"],
-  [regulus_me, "me"],
-  [regulus_on_my_mind, "on my mind"],
-  [cacteyes, "Cacteyes"],
-  [tiger_leap, "Abstract Tiger Ballpoint"],
-  [ghost_mirrors, "Abstract Ballpoint"],
+  // file, title, page
+  [aries, "Aries","aries"],
+  [taurus, "Taurus", "taurus"],
+  [gemini, "Gemini", "gemini"],
+  [cancer, "Cancer", "cancer"],
+  [scorpio, "Scorpio", "scorpio"],
+  [tiger_leap, "A huge mega doodle", "megadoodle"],
+  [ghost_mirrors, "Mini Doodle", "minidoodle"],
   [lithograph_dream, "Beer"],
   [self_portrait, "paintings & drawings"],
   [silver_key, "Old Highschool Drawing"],
   // [site_logo, "paintings & drawings"],
   [anatomy, "Old Art School Relic"],
+  [cacteyes, "Cacteyes (illustrated music)", "cacteyes"],
+  [regulus_on_my_mind, "On My Mind, (illustrated music)", "onmymind"],
+  [us, "Us (illustrated music)", "us"],
+  [regulus_me, "Me, (illustrated music)","me"],
+  [light, "Light (illustrated music)", "light"],
+  [dreams, "Dreams, (illlustrated music)", "dreams"],
+  [god, "God, (illlustrated music)", "god"],
 ]
 
 const Work = () => (
   <Layout>
-    <div style={{display: "flex", flexWrap: "wrap", justifyContent: 'center', backgroundColor: 'black'}}>
+    <div style={{display: "flex", flexWrap: "wrap", justifyContent: 'center'}}>
       <div style={{width:10}}></div>
       {
         images.map((x)=>{
-          return <div className={"project-card"} style={imageStyle(x[0])}>{x[1]}</div>
-        })
+          return(
+            <a href={`/${x[2]}`}>
+            <div className={"project-card"} style={imageStyle(x[0])}>
+            </div>
+            <center id="paintingTitle">{x[1]}</center>
+            </a>
+          )})
       }
     <div style={{width:10}}></div>
     </div>

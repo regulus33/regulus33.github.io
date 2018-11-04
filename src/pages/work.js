@@ -2,7 +2,9 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import anything from '../images/gatsby-icon.png'
-import artThumb from '../images/paintings/ghost_lady.jpg'
+import art from '../images/paintings/art.jpg'
+import sound from '../images/paintings/sound.jpg'
+import tech from '../images/paintings/tech.jpg'
 
 
 const imageStyle = (src) => {
@@ -18,18 +20,22 @@ const imageStyle = (src) => {
   )
 }
 
-const images = [
-  [artThumb, "paintings & drawings"]
-]
+// const images = [
+//   [art, "paintings & drawings"]
+//   [audio, "paintings & drawings"]
+//   [tech, "paintings & drawings"]
+// ]
 
 const Work = () => (
   <Layout>
-    <div style={{display: "flex", flexWrap: "wrap"}}>
-      {
-        images.map((x)=>{
-          return <a href="/paintings"><div className={"project-card"} style={imageStyle(x[0])}>{x[1]}</div></a>
-        })
-      }
+    <div style={{display: "flex", flexWrap: "wrap", justifyContent: 'center'}}>
+          <div style={{display: 'flex'}}>
+            <div style={{display: "flex", flexDirection: "column"}}>
+              <a href="/paintings"><img className="workLink invert" src={sound}/></a>
+              <a href="/paintings"><img className="workLink invert" src={tech}/></a>
+            </div>
+            <a href="/paintings"><img id="art" className="invert" src={art}/></a>
+          </div>
     </div>
   </Layout>
 )

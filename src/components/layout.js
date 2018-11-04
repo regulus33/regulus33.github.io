@@ -17,14 +17,14 @@ const Layout = ({ children, location }) => {
     )
   } else {
     content = (
-      <div id="wrapper" className="page">
+      <div id="pageWrapper" className="page">
         <div>
           {children}
         </div>
       </div>
     )
   }
-
+                   
   return (
     <StaticQuery
       query={graphql`
