@@ -63,7 +63,7 @@ const images = [
 ]
 
 
-const Work = () => (
+const Paintings = () => (
   <Layout>
     <TopBar title={"Art"}/>
     <div style={{display: "flex", flexWrap: "wrap", justifyContent: 'center'}}>
@@ -83,4 +83,4 @@ const Work = () => (
   </Layout>
 )
 
-export default Work
+export default Paintings
