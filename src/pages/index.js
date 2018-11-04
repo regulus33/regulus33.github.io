@@ -89,12 +89,26 @@ class IndexPage extends React.Component {
     }
   }
 
+  expand(document){
+    const list = document.getElementsByClassName("letter")
+    for (let i = 0; i < list.length; i++) {
+      list[i].classList.add("moveLetter");
+    }
+  }
+
+  contract(document){
+    const list = document.getElementsByClassName("moveLetter")
+    for (let i = 0; i < list.length; i++) {
+      list[i].classList.remove("moveLetter");
+    }
+  }
+
   render() {
     return (
       <Layout location={this.props.location}>
         <div className={`body ${this.state.loading} ${this.state.isArticleVisible ? 'is-article-visible' : ''}`}>
           <div id="wrapper">
-            <Header onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
+            <Header expand={this.expand} contract={this.contract} onOpenArticle={this.handleOpenArticle} timeout={this.state.timeout} />
             <Main
               isArticleVisible={this.state.isArticleVisible}
               timeout={this.state.timeout}

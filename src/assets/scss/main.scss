@@ -101,6 +101,27 @@
 		filter: invert(1)
 	}
 
+	#icon-frame {
+		animation: rotate 6.5s linear infinite;
+	}
+	  
+	@keyframes rotate {
+		to {
+			transform: rotate(360deg);
+		}
+	}
+
+	.moveLetter {
+		transition-property: padding-right;
+		transition-duration: 19s;
+		transition-timing-function: ease-in;
+	}
+
+	.moveLetter {
+		padding-right: 600px
+	}
+	  
+
 
 
 
