@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import TopBar from '../components/TopBar'
 import anything from '../images/gatsby-icon.png'
 import anatomy from '../images/paintings/anatomy.jpeg'
 import aries from '../images/paintings/aries.jpg'
@@ -61,15 +62,10 @@ const images = [
   [god, "God, (illlustrated music)", "god"],
 ]
 
-const backStyles = {
-  marginTop: 85,
-  paddingLeft: 45,
-  color: "black"
-}
 
 const Work = () => (
   <Layout>
-    <span style={backStyles}><a href="javascript:window.history.back();">&#8636; back</a></span><center><h1 style={{color: "black"}}>Art</h1></center>
+    <TopBar title={"Art"}/>
     <div style={{display: "flex", flexWrap: "wrap", justifyContent: 'center'}}>
       <div style={{width:10}}></div>
       {
