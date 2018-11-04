@@ -47,11 +47,11 @@ const images = [
   [scorpio, "Scorpio", "scorpio"],
   [tiger_leap, "A huge mega doodle", "megadoodle"],
   [ghost_mirrors, "Mini Doodle", "minidoodle"],
-  [lithograph_dream, "Beer"],
-  [self_portrait, "paintings & drawings"],
-  [silver_key, "Old Highschool Drawing"],
+  [lithograph_dream, "Beer", "beer"],
+  [self_portrait, "Self Portrait", "self"],
+  [silver_key, "Old Highschool Drawing", "silver"],
   // [site_logo, "paintings & drawings"],
-  [anatomy, "Old Art School Relic"],
+  [anatomy, "Old Art School Relic", "anatomy"],
   [cacteyes, "Cacteyes (illustrated music)", "cacteyes"],
   [regulus_on_my_mind, "On My Mind, (illustrated music)", "onmymind"],
   [us, "Us (illustrated music)", "us"],
@@ -61,8 +61,15 @@ const images = [
   [god, "God, (illlustrated music)", "god"],
 ]
 
+const backStyles = {
+  marginTop: 85,
+  paddingLeft: 45,
+  color: "black"
+}
+
 const Work = () => (
   <Layout>
+    <span style={backStyles}><a href="javascript:window.history.back();">&#8636; back</a></span><center><h1 style={{color: "black"}}>Art</h1></center>
     <div style={{display: "flex", flexWrap: "wrap", justifyContent: 'center'}}>
       <div style={{width:10}}></div>
       {
