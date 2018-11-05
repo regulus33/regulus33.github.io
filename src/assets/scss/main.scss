@@ -113,14 +113,47 @@
 
 	.moveLetter {
 		transition-property: padding-right;
-		transition-duration: 19s;
+		transition-duration: 1s;
 		transition-timing-function: ease-in;
 	}
 
 	.moveLetter {
-		padding-right: 600px
+		padding-right: 20px
+	}
+
+	.letter {
+		padding-right: 70px
+	}
+
+	.projectContainer {
+		display: grid;
+		grid-template-columns: auto 600px;
+		grid-template-rows: auto;
+	}
+
+	.projectImage {
+		width: 100%;
+	}
+
+	.inner {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: auto;
+		width: 100% !important;
 	}
 	  
+	div#wrapper {
+		// width: 100% !important;
+	}
+
+	#header .content {
+		width: 100%;
+	}
+
+	header#header {
+		width: 100%;
+	}
+
 
 
 

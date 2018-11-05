@@ -13,11 +13,18 @@ const headingStyle = {
 
 
 
+
+
+
+
+
 const Aries = () => (
   <Layout>
-    <div style={{display: "flex", flexWrap: "no-wrap"}}>
-      <img style={{width: window.innerWidth/2, height:"100%"}}  src={aries}/>
-    <div className="artTalk">
+    <div className="projectContainer">
+    <div>
+      <img className="projectImage" src={aries}/>
+    </div>
+    <div className="artTalk" style={{ flexDirection: "column"}}>
       <h3 style={headingStyle}>Aries</h3>
       <p style={paragraphStyle}>
         Part one of a Zodiac Illustration project. Graphite on paper, acrylic background and additional coloring applied digitially. Aries is associated with Mars thus the red planet in the center of the composition. I chose a ram skull to evoke a sense of war, another major domain of rule for those born under this sign.

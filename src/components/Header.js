@@ -7,8 +7,8 @@ const Header = (props) => (
           <div id="icon-frame"><span id="cross"><span id="yang">&#9775;</span></span></div>
         </div>
         <div className="content">
-            <div className="inner" onMouseOver={()=>props.expand(document)} onMouseLeave={()=>props.contract(document)}>
-                <h1><span class="letter">p</span>   <span class="letter">a</span>    <span class="letter">r</span>    <span class="letter">k</span>    <span class="letter">e</span>    <span class="letter">r</span>    <span class="letter">&#9775;</span>     <span class="letter">p</span>    <span class="letter">i</span>    <span class="letter">n</span>   <span class="letter">k</span></h1>
+            <div className="inner">
+                <h1 class="">p</h1>   <h1 class="">a</h1>    <h1 class="">r</h1>    <h1 class="">k</h1>    <h1 class="">e</h1>    <h1 class="">r</h1>    <h1 class="">&#9775;</h1>     <h1 class="">p</h1>    <h1 class="">i</h1>    <h1 class="">n</h1>   <h1 class="">k</h1>
             </div>
         </div>
         <nav>
