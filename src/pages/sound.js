@@ -5,6 +5,7 @@ import TopBar from '../components/TopBar'
 import pillowman from '../images/paintings/pillowman.jpg'
 import backworks from '../images/paintings/backworks.png'
 import quit from '../images/paintings/quit.jpg'
+import videos from '../images/paintings/videos.jpg'
 
 const imageStyle = (src) => {
   return(
@@ -23,6 +24,7 @@ const images = [
     [pillowman, "Pillow Man", "pillowman"],
     [backworks, "Backworks (old)", "backworks"],
     [quit, "Quit (old)", "quit"],
+    [videos, "Music Videos", "videos"]
 ]
 
 
