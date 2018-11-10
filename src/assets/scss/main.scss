@@ -83,12 +83,11 @@
 		color: black;
 	}
 
-	#art {
-		max-width: 400px;
-	}
-
 	.workLink {
-		height: 296.2px;
+		height: 350px;
+		margin-top: 50px;
+		max-width: 377px;
+		margin: 44px;
 	}
 
 	.invert {
@@ -164,12 +163,26 @@
 		.projectImage {
 			width: 100%;
 		}
+
+		.worklink {
+			width: 100% !important;
+		}
 		
 	}
 
 	#about {
 		filter: grayscale(100%) contrast(150%);
 	}
+
+	div#stacks {
+		max-width: 300px;
+	}
+	
+		
+	body {
+		background-color: white;
+	}
+	
 
 
 
