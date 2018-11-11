@@ -92,7 +92,7 @@
 
 	.invert {
 		transition-property: filter;
-		transition-duration: .6s;
+		transition-duration: .16s;
 		transition-timing-function: ease-in;
 	}
 
@@ -167,6 +167,20 @@
 		.worklink {
 			width: 100% !important;
 		}
+
+		.topbar {
+			box-shadow: 0 0 3px rgba(0,0,0,0.3);		
+			position: fixed;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: 1030;
+			background-color: white;
+		}
+
+		#backButton {
+			display: none;
+		}
 		
 	}
 
@@ -182,6 +196,8 @@
 	body {
 		background-color: white;
 	}
+
+	
 	
 
 

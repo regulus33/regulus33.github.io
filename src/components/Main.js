@@ -24,9 +24,19 @@ class Main extends React.Component {
         </article>
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">About</h2>
+          <h2 className="major">P  A  R  K  E  R   P  I  N  K</h2>
           <span className="image main"><img id="about" src={about} alt="" /></span>
-          <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+          <p>Parker Pink is an artist born in the US in 1989. Which makes him almost 30. He knows how to make scrambled eggs and almost lives in Russia. <a href="https://www.getscience.com/biology-explained/how-genetically-related-are-we-bananas" target="_blank">He's also almost a banana 🍌</a>. Music,  Art and Coding are the things he's most proud of doing and you can find examples of that <a href="/work">here</a>. He also loves coffee, sleeping, dreaming and most of all, his girlyfrienddd ❤️.</p>
+
+          <p>He used to call himself Dawnsoon, thats why you'll see that name everywhere. <a href="https://open.spotify.com/artist/46p7ddAOWKpdkg0ZPvA727?si=MKu8g6OxQh-vihBXjmvuNg" target="_blank">Here's Dawnsoon's spotify</a>
+          </p>
+          
+          <ul className="icons">
+            <li><a href="https://open.spotify.com/artist/2QrKQMhRumC2hmxn3pheIS?si=8AAzXCwXR0uCTAt18vmXxw" className="icon fa-spotify" target="_blank"><span className="label">Spotify</span></a></li>
+            <li><a href="https://soundcloud.com/parkerpink" className="icon fa-soundcloud" target="_blank"><span className="label">Soundcloud</span></a></li>
+            <li><a href="https://www.instagram.com/pvrkerpink/" className="icon fa-instagram" target="_blank"><span className="label">Instagram</span></a></li>
+            <li><a href="https://github.com/regulus33" className="icon fa-github" target="_blank"><span className="label">GitHub</span></a></li>
+          </ul>
           {close}
         </article>
 

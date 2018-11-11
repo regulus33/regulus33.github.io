@@ -15,7 +15,7 @@ const Work = () => (
   <div id="work" stlye={{marginTop: 40}}>
     <div style={{display: "grid", girdTemplateColumns: "auto auto", justifyContent: "center", gridGap: 20}}>
         <div> 
-          <TopBar title={"things that i do"}/>
+          <TopBar title={"Work"}/>
         </div>  
           <div>
               <a href="/sound"><img className="workLink invert" src={sound}/></a>

@@ -11,8 +11,8 @@ const backStyles = {
 
 const TopBar = ({title}) => {
    return (
-    <div>
-        <span style={backStyles}><a className="backy" href="javascript:window.history.back();">&#8636; back</a></span><center><h1 style={{color: "black"}}>{title}</h1></center>
+    <div className="topbar">
+        <span id="backButton" style={backStyles}><a className="backy" href="javascript:window.history.back();">&#8636; back</a></span><center><h1 style={{color: "black"}}>{title}</h1></center>
     </div>
    )
 }
