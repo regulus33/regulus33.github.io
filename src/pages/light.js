@@ -11,10 +11,7 @@ const paragraphStyle = {
 const headingStyle = {
   textAlign: 'center'
 }
-const imageStyle = {
-  width: window.innerWidth/2,
-  height:"100%"
-}
+
 
 const Light = () => (
   <Layout>

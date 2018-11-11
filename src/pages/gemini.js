@@ -5,7 +5,6 @@ import gemini from '../images/paintings/gemini.jpg'
 import BackButton from '../components/BackButton'
 
 
-console.log(window.innerWidth)
 
 const paragraphStyle = {
  padding: 20
@@ -14,10 +13,7 @@ const paragraphStyle = {
 const headingStyle = {
   textAlign: 'center'
 }
-const imageStyle = {
-  width: window.innerWidth/2,
-  height:"100%"
-}
+
 
 const Gemini = () => (
   <Layout>

@@ -12,7 +12,7 @@ const headingStyle = {
   textAlign: 'center'
 }
 const imageStyle = {
-  width: window.innerWidth/2,
+  //width: window.innerWidth/2,
   height:"100%"
 }
 

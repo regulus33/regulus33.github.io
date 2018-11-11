@@ -1,6 +1,5 @@
 import React from 'react'
 
-console.log(window.innerWidth)
 
 const backStyles = {
     marginTop: 85,

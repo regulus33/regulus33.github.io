@@ -5,7 +5,6 @@ import me from '../images/paintings/regulus_me.jpg'
 import BackButton from '../components/BackButton'
 
 
-console.log(window.innerWidth)
 
 const paragraphStyle = {
  padding: 20
@@ -13,10 +12,6 @@ const paragraphStyle = {
 
 const headingStyle = {
   textAlign: 'center'
-}
-const imageStyle = {
-  width: window.innerWidth/2,
-  height:"100%"
 }
 
 const Me = () => (

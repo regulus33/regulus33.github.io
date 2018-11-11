@@ -1,10 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import cancer from '../images/paintings/cancer.jpg'
 import BackButton from '../components/BackButton'
 
-console.log(window.innerWidth)
 
 const paragraphStyle = {
  padding: 20
@@ -13,10 +11,7 @@ const paragraphStyle = {
 const headingStyle = {
   textAlign: 'center'
 }
-const imageStyle = {
-  width: window.innerWidth/2,
-  height:"100%"
-}
+
 
 const Cancer = () => (
   <Layout>

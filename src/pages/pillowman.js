@@ -5,7 +5,6 @@ import pillowman from '../images/paintings/pillowman.jpg'
 import BackButton from '../components/BackButton'
 
 
-console.log(window.innerWidth)
 
 const paragraphStyle = {
  padding: 20
@@ -15,7 +14,7 @@ const headingStyle = {
   textAlign: 'center'
 }
 const imageStyle = {
-  width: window.innerWidth/2,
+  //width: window.innerWidth/2,
   height:"100%"
 }
 
