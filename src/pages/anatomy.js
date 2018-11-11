@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import anatomy from '../images/paintings/anatomy.jpeg'
-import BackButton from '../components/backbutton.js'
+import BackButton from '../components/BackButton.js'
 const paragraphStyle = {
  padding: 20
 }
