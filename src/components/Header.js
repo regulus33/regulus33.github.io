@@ -8,7 +8,7 @@ const Header = (props) => (
         </div>
         <div className="content">
             <div className="inner">
-                <h1 class="">p</h1>   <h1 class="">a</h1>    <h1 class="">r</h1>    <h1 class="">k</h1>    <h1 class="">e</h1>    <h1 class="">r</h1>    <h1 class="">&#9775;</h1>     <h1 class="">p</h1>    <h1 class="">i</h1>    <h1 class="">n</h1>   <h1 class="">k</h1>
+                        <h1>D</h1><h1>A</h1><h1>W</h1><h1>N</h1><h1>S</h1><h1 class="">&#9775;</h1><h1 class="">&#9775;</h1>  <h1>N</h1>  
             </div>
         </div>
         <nav>

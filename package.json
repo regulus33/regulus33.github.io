@@ -6,6 +6,7 @@
   "dependencies": {
     "babel-plugin-styled-components": "^1.8.0",
     "gatsby": "^2.0.33",
+    "gatsby-cli": "^2.7.31",
     "gatsby-plugin-google-tagmanager": "^2.0.6",
     "gatsby-plugin-manifest": "^2.0.2",
     "gatsby-plugin-offline": "^2.0.5",

@@ -34,7 +34,7 @@ const Dreams = () => (
       <div className="artTalk">
       <h3 style={headingStyle}>Found Souls</h3>
       <center><p style={paragraphStyle}>
-        Unity based. Components are a song, (sampling and chopping vocals from an HBO show called <a style={{color: "blue"}} href="https://www.youtube.com/watch?v=VDVaiwzU8yc&t=492s" target="_blank">Child of Rage</a>)and an audio analysis script mapped to assets' xyz dimensions on each render. USed as promo for an older music project called "Dawnsoon." 
+        Unity based.
       </p></center>
       <BackButton/>
     </div>

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Parker Pink",
-    author: "Zachary Rowden",
+    title: "Dawnsoon",
+    author: "Dawnsoon",
     description: "multi-disciplinarian"
   },
   plugins: [
