@@ -2,10 +2,10 @@ import React from 'react'
 
 
 const backStyles = {
-    marginTop: 85,
-    paddingLeft: 45,
-    color: "black",
-    position: "fixed"
+    // marginTop: 85,
+    // paddingLeft: 45,
+    // color: "black",
+    // position: "fixed"
   }
 
 const TopBar = ({title}) => {

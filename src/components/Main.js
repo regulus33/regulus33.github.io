@@ -12,7 +12,7 @@ class Main extends React.Component {
     let close = <div className="close" onClick={() => {this.props.onCloseArticle()}}></div>
 
     return (
-      <div ref={this.props.setWrapperRef} id="main" style={this.props.timeout ? {display: 'flex'} : {display: 'none'}}>
+      <div ref={this.props.setWrapperRef} id="main" >
 
 
         <article id="work" className={`${this.props.article === 'work' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>

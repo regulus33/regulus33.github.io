@@ -6,6 +6,9 @@ import tech from '../images/paintings/tech.jpg'
 import TopBar from '../components/TopBar';
 import {Link} from 'gatsby';
 
+
+			// grids-template-rows: auto auto;
+
 const Work = () => (
   <Layout>
   <div id="work" stlye={{marginTop: 40}}>
