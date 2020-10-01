@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import TopBar from '../components/TopBar'
 import foundSouls from '../images/paintings/foundsouls.png'
+import {Link} from 'gatsby'
 
 const imageStyle = (src) => {
   return(

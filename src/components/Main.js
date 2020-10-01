@@ -24,17 +24,17 @@ class Main extends React.Component {
         </article>
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
-          <h2 className="major">Dawnsoon</h2>
+          <h2 className="major">Zachary John Rowden</h2>
+          <p>Hi there! I'm Zack! Welcome to my website!</p>
+          <p>I am a coder, artist and super friendly guy! I was born in Tucson Arizona in 1989. I live in Prague, Czech Republic and work primarily as a software developer. I also run a web app called <a href="https://midiframe.com">Midi Frame</a> that helps musicians like me to create cool, visually pleasing music videos from simple midi files or midi over usb.</p>
           <span className="image main"><img id="about" src={about} alt="" /></span>
-          <p>Dawnsoon is a musician, artist, illustrator and creative Computerist.</p>
 
           
           <ul className="icons">
-            <li><a href="https://open.spotify.com/artist/2QrKQMhRumC2hmxn3pheIS?si=8AAzXCwXR0uCTAt18vmXxw" className="icon fa-spotify" target="_blank"><span className="label">Spotify Again</span></a></li>
-            <li><a href="https://open.spotify.com/artist/46p7ddAOWKpdkg0ZPvA727?si=MKu8g6OxQh-vihBXjmvuNg" className="icon fa-spotify" target="_blank"><span className="label">Spotify Again</span></a></li>
-            <li><a href="https://soundcloud.com/parkerpink" className="icon fa-soundcloud" target="_blank"><span className="label">Soundcloud</span></a></li>
-            <li><a href="https://www.instagram.com/pvrkerpink/" className="icon fa-instagram" target="_blank"><span className="label">Instagram</span></a></li>
             <li><a href="https://github.com/regulus33" className="icon fa-github" target="_blank"><span className="label">GitHub</span></a></li>
+            {/* <li><a href="https://www.instagram.com/pvrkerpink/" className="icon fa-instagram" target="_blank"><span className="label">Instagram</span></a></li> */}
+            {/* <li><a href="https://open.spotify.com/artist/46p7ddAOWKpdkg0ZPvA727?si=MKu8g6OxQh-vihBXjmvuNg" className="icon fa-spotify" target="_blank"><span className="label">Spotify Again</span></a></li> */}
+            <li><a href="https://soundcloud.com/parkerpink" className="icon fa-soundcloud" target="_blank"><span className="label">Soundcloud</span></a></li>
           </ul>
           {close}
         </article>

@@ -64,9 +64,6 @@
 	}
 
 	div.project-card:hover {
-		box-shadow: 1px 1px 1px .7px rgb(120, 133, 153);
-		height: 500px !important;
-		width: 500px !important;
 		filter: grayscale(0%)
 	}
 	
@@ -158,7 +155,13 @@
 			display: grid;
 			grid-template-columns: auto;
 			grid-template-rows: auto auto;
-		}
+    }
+    
+    img.workLink {
+      height: 100% !important;
+      width: 100% !important;
+    }
+  
 	
 		.projectImage {
 			width: 100%;
@@ -184,18 +187,23 @@
 		
 	}
 
-	#about {
-		filter: grayscale(100%) contrast(150%);
-	}
+#about {
+  // filter: grayscale(100%) contrast(150%);
+}
 
-	div#stacks {
-		max-width: 300px;
-	}
-	
-		
-	body {
-		background-color: white;
-	}
+div#stacks {
+  max-width: 300px;
+}
+
+  
+body {
+  background-color: white;
+}
+
+img.workLink {
+  height: 25%;
+  width: 25%;
+}
 
 	
 	
