@@ -71,11 +71,11 @@ const Paintings = () => (
       {
         images.map((x)=>{
           return(
-            <a href={`/${x[2]}`}>
+            <Link to={`/${x[2]}`}>
             <div className={"project-card"} style={imageStyle(x[0])}>
             </div>
             <center id="paintingTitle">{x[1]}</center>
-            </a>
+            </Link>
           )})
       }
     <div style={{width:10}}></div>
