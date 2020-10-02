@@ -10,6 +10,7 @@ import videos from '../images/paintings/videos.jpg'
 const imageStyle = (src) => {
   return(
     {
+      border: "20px solid white",
       backgroundImage: `url(${src})`,
       backgroundPosition:	'center',
       backgroundSize:	'cover',
