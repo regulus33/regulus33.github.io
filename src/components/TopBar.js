@@ -11,7 +11,8 @@ const backStyles = {
 const TopBar = ({title}) => {
    return (
     <div className="topbar">
-        <span id="backButton" style={backStyles}><a className="backy" href="javascript:window.history.back();">&#8636; back</a></span><center><h1 style={{color: "black"}}>{title}</h1></center>
+        <a href="/work"><span id="logo" style={{color:"black", fontSize:"20px", fontWeight:"bold", position:"relative", top: 29, left: 29}}>Zachary Rowden</span></a>
+        <span id="backButton" style={backStyles}><a className="backy" style={{cursor:"pointer"}} onClick={()=>window.history.back()}>&#8636; back</a></span><h1 style={{color: "black", textAlign:"center"}}>{title}</h1>
     </div>
    )
 }

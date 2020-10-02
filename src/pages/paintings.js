@@ -31,6 +31,7 @@ import sbr from '../images/paintings/sbrntsbr.png'
 const imageStyle = (src) => {
   return(
     {
+      border: "20px solid white",
       backgroundImage: `url(${src})`,
       backgroundPosition:	'center',
       backgroundSize:	'cover',
@@ -73,15 +74,17 @@ const Paintings = () => (
   <Layout>
     <TopBar title={"Art"}/>
     <div style={{display: "flex", flexWrap: "wrap", justifyContent: 'center'}}>
-      <div style={{width:10}}></div>
       {
         images.map((x)=>{
           return(
-            <Link to={`/${x[2]}`}>
-            <div className={"project-card"} style={imageStyle(x[0])}>
+            <div>
+              <Link to={`/${x[2]}`}>
+              <div className={"project-card"} style={imageStyle(x[0])}>
+              </div>
+              <center id="paintingTitle">{x[1]}</center>
+              </Link>
+              <div></div>
             </div>
-            <center id="paintingTitle">{x[1]}</center>
-            </Link>
           )})
       }
     <div style={{width:10}}></div>
