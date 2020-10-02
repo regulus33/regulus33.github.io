@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import TopBar from '../components/TopBar'
 import foundSouls from '../images/paintings/foundsouls.png'
+import privateVoid from '../images/paintings/privateVoida.png'
 import {Link} from 'gatsby'
 
 const imageStyle = (src) => {
@@ -19,6 +20,7 @@ const imageStyle = (src) => {
 }
 
 const images = [
+  [privateVoid, "Private Void, a unity RPG", "privatevoid"],
     [foundSouls, "Found Souls, a Unity audio visualizer", "foundsouls"],
 ]
 
