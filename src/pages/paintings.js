@@ -23,6 +23,9 @@ import tiger_leap from '../images/paintings/tiger_leap.jpeg'
 import light from '../images/paintings/light.png'
 import us from '../images/paintings/us.png'
 import god from '../images/paintings/god.jpg'
+import enterprise from '../images/paintings/enterprise.gif'
+import bird from '../images/paintings/bird.png'
+import sbr from '../images/paintings/sbrntsbr.png'
 
 
 const imageStyle = (src) => {
@@ -41,6 +44,9 @@ const imageStyle = (src) => {
 const images = [
   // [bill_gates_and_chris, "paintings & drawings"],
   // file, title, page
+  [sbr, "untitled", "untitled"],
+  [bird, "Bird", "bird"],
+  [enterprise, "EnterPrise", "enterprise"],
   [aries, "Aries","aries"],
   [taurus, "Taurus", "taurus"],
   [gemini, "Gemini", "gemini"],
@@ -71,11 +77,11 @@ const Paintings = () => (
       {
         images.map((x)=>{
           return(
-            <a href={`/${x[2]}`}>
+            <Link to={`/${x[2]}`}>
             <div className={"project-card"} style={imageStyle(x[0])}>
             </div>
             <center id="paintingTitle">{x[1]}</center>
-            </a>
+            </Link>
           )})
       }
     <div style={{width:10}}></div>

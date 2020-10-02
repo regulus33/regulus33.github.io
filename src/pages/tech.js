@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import TopBar from '../components/TopBar'
 import foundSouls from '../images/paintings/foundsouls.png'
+import {Link} from 'gatsby'
 
 const imageStyle = (src) => {
   return(
@@ -29,11 +30,11 @@ const Tech = () => (
       {
         images.map((x)=>{
           return(
-            <a href={`/${x[2]}`}>
+            <Link to={`/${x[2]}`}>
             <div className={"project-card"} style={imageStyle(x[0])}>
             </div>
             <center id="paintingTitle">{x[1]}</center>
-      ]      </a>
+      ]      </Link>
           )})
       }
     <div style={{width:10}}></div>
