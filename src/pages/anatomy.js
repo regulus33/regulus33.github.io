@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import anatomy from '../images/paintings/anatomy.jpeg'
+import anatomy from '../images/paintings/anatomy.jpg'
 import BackButton from '../components/BackButton.js'
 const paragraphStyle = {
  padding: 20

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import tiger_leep from '../images/paintings/tiger_leap.jpeg'
+import tiger_leep from '../images/paintings/tiger_leap.jpg'
 import BackButton from '../components/BackButton'
 
 

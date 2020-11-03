@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import self from '../images/paintings/self_portrait.jpeg'
+import self from '../images/paintings/self_portrait.jpg'
 import BackButton from '../components/BackButton'
 
 const paragraphStyle = {

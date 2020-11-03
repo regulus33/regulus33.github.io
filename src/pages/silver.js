@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import silver_key from '../images/paintings/silver_key.jpeg'
+import silver_key from '../images/paintings/silver_key.jpg'
 import BackButton from '../components/BackButton'
 
 const paragraphStyle = {

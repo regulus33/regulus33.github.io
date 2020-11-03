@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
-import min from '../images/paintings/ghost_mirrors.jpeg'
+import min from '../images/paintings/ghost_mirrors.jpg'
 import BackButton from '../components/BackButton'
 
 
