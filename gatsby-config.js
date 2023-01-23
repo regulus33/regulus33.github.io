@@ -1,8 +1,9 @@
 module.exports = {
+  pathPrefix: "/parkerpink",
   siteMetadata: {
     title: "Dawnsoon",
     author: "Dawnsoon",
-    description: "multi-disciplinarian"
+    description: "multi-disciplinarian",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
