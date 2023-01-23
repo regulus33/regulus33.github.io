@@ -14,7 +14,7 @@ const Work = () => (
     <div id="work" stlye={{ marginTop: 40 }}>
         <TopBar title={"Work"} />
       <div style={{ display: "flex", flexWrap: "wrap", justifyContent: 'center', alignItems: 'center' }}>
-        <Link to="/tech"><img className="workLink invert" src={tech} /></Link>
+        <Link to="/tech"><img className="workLink invert" src={tech} />wdwdw</Link>
         <Link to="/paintings"><img className=" workLink invert" src={art} /></Link>
         <Link to="/sound"><img className="workLink invert" src={sound} /></Link>
       </div>
