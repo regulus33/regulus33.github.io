@@ -3,6 +3,8 @@ import Layout from '../components/layout'
 import TopBar from '../components/TopBar'
 import foundSouls from '../images/paintings/foundsouls.png'
 import privateVoid from '../images/paintings/privateVoida.png'
+import midiframe from '../images/midiframe.png'
+import tonegarden from '../images/tonegarden.png'
 import {Link} from 'gatsby'
 
 const imageStyle = (src) => {
@@ -20,6 +22,8 @@ const imageStyle = (src) => {
 }
 
 const images = [
+    [tonegarden, "Generate your own binaural beats with web audio api", "tonegarden"],
+    [midiframe, "Play a video like a sampler", "midiframe"],
     [privateVoid, "Private Void, a unity RPG", "privatevoid"],
     [foundSouls, "Found Souls, a Unity audio visualizer", "foundsouls"],
 ]
@@ -33,7 +37,7 @@ const Tech = () => (
             {
                 images.map((x) => {
                     return (
-                        <Link to={`/${x[2]}`}>
+                        <Link to={`/tech/${x[2]}`}>
                             <div className={"project-card"} style={imageStyle(x[0])}>
                             </div>
                             <center id="paintingTitle">{x[1]}</center>

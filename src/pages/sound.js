@@ -4,7 +4,6 @@ import Layout from '../components/layout'
 import TopBar from '../components/TopBar'
 import pillowman from '../images/paintings/pillowman.jpg'
 import backworks from '../images/paintings/backworks.png'
-import quit from '../images/paintings/quit.jpg'
 import videos from '../images/paintings/videos.jpg'
 
 const imageStyle = (src) => {
@@ -24,7 +23,6 @@ const imageStyle = (src) => {
 const images = [
     [pillowman, "Pillow Man", "pillowman"],
     [backworks, "Backworks (old)", "backworks"],
-    [quit, "Quit (old)", "quit"],
     [videos, "Music Videos", "videos"]
 ]
 
@@ -37,7 +35,7 @@ const Sound = () => (
             {
                 images.map((x) => {
                     return (
-                        <Link to={`/${x[2]}`}>
+                        <Link to={`/sound/${x[2]}`}>
                             <div className={"project-card"} style={imageStyle(x[0])}>
                             </div>
                             <center id="paintingTitle">{x[1]}</center>

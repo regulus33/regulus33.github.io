@@ -26,7 +26,7 @@ const Quit = () => (
                     <iframe src="https://open.spotify.com/embed/album/6Riix1TtqXTJCup514luqF" width="300" height="380"
                             frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                 </center>
-                <BackButton/>
+                
             </div>
         </div>
     </Layout>

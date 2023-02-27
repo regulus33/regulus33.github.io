@@ -9,7 +9,7 @@ import cancer from '../images/paintings/cancer.jpg'
 import dreams from '../images/paintings/dreams.jpg'
 import gemini from '../images/paintings/gemini.jpg'
 import ghost_mirrors from '../images/paintings/ghost_mirrors.jpg'
-import lithograph_dream from '../images/paintings/lithograph_dream.jpg'
+import beer from '../images/paintings/beer.jpg'
 import regulus_me from '../images/paintings/regulus_me.jpg'
 import regulus_on_my_mind from '../images/paintings/regulus_on_my_mind.jpg'
 import scorpio from '../images/paintings/scorpio.jpg'
@@ -23,6 +23,9 @@ import god from '../images/paintings/god.jpg'
 import enterprise from '../images/paintings/enterprise.gif'
 import bird from '../images/paintings/bird.png'
 import sbr from '../images/paintings/sbrntsbr.png'
+import elephant from '../images/paintings/elephant_print.jpg'
+import plangeneva from '../images/paintings/plangeneva.jpg'
+import endofline from '../images/paintings/endofline.jpg'
 
 const imageStyle = (src) => {
     return (
@@ -39,42 +42,53 @@ const imageStyle = (src) => {
 }
 
 const images = [
-    // [bill_gates_and_chris, "paintings & drawings"],
-    // file, title, page
-    [sbr, "untitled", "untitled"],
+
+    [scorpio, "Scorpio", "scorpio"],
+    [sbr, "Untitled", "untitled"],
+    [endofline, "End of line", "endofline"],
+    [plangeneva, "Plangeneva", "plangeneva"],
+    [elephant, "elephant", "elephant"],
+    [taurus, "Taurus", "taurus"],
+    [tiger_leap, "A huge mega doodle", "megadoodle"],
+    [beer, "Beer", "beer"],
     [bird, "Bird", "bird"],
     [enterprise, "EnterPrise", "enterprise"],
     [aries, "Aries", "aries"],
-    [taurus, "Taurus", "taurus"],
     [gemini, "Gemini", "gemini"],
-    [cancer, "Cancer", "cancer"],
-    [scorpio, "Scorpio", "scorpio"],
-    [tiger_leap, "A huge mega doodle", "megadoodle"],
     [ghost_mirrors, "Mini Doodle", "minidoodle"],
-    [lithograph_dream, "Beer", "beer"],
+    [cancer, "Cancer", "cancer"],
     [self_portrait, "Self Portrait", "self"],
     [silver_key, "Old Highschool Drawing", "silver"],
-    // [site_logo, "paintings & drawings"],
     [anatomy, "Old Art School Relic", "anatomy"],
-    [cacteyes, "Cacteyes (illustrated music)", "cacteyes"],
-    [regulus_on_my_mind, "On My Mind, (illustrated music)", "onmymind"],
-    [us, "Us (illustrated music)", "us"],
-    [regulus_me, "Me, (illustrated music)", "me"],
-    [light, "Light (illustrated music)", "light"],
-    [dreams, "Dreams, (illlustrated music)", "dreams"],
-    [god, "God, (illlustrated music)", "god"],
+    [cacteyes, "Cacteyes (illustrated sound)", "cacteyes"],
+    [regulus_on_my_mind, "On My Mind, (illustrated sound)", "onmymind"],
+    [us, "Us (illustrated sound)", "us"],
+    [regulus_me, "Me, (illustrated sound)", "me"],
+    [light, "Light (illustrated sound)", "light"],
+    [dreams, "Dreams, (illlustrated sound)", "dreams"],
+    [god, "God, (illlustrated sound)", "god"],
 ]
+// ].sort((a, b) => {
+//     if (a[2][0] < b[2][0]) {
+//         return -1;
+//     }
+//     if (a[2][0] > b[2][0]) {
+//         return 1;
+//     }
+//     return 0;
+// });
 
 
 const Paintings = () => (
     <Layout>
+        <div className={'spacer'}></div>
         <TopBar title={"Art"}/>
         <div style={{display: "flex", flexWrap: "wrap", justifyContent: 'center'}}>
             {
                 images.map((x) => {
                     return (
                         <div>
-                            <Link to={`/${x[2]}`}>
+                            <Link to={`/paintings/${x[2]}`}>
                                 <div className={"project-card"} style={imageStyle(x[0])}>
                                 </div>
                                 <center id="paintingTitle">{x[1]}</center>
