@@ -9,6 +9,8 @@ const ToneGarden = () => (
             built on Material UI.</p>
 
         <a style={{color: "blue"}} href="https://github.com/regulus33/ToneGarden" target="_blank">See the repo</a>
+        <br/>
+        <a style={{color: "blue"}} href={'https://www.tonegarden.io/'}>Go to live site</a>
 </PaintingsComponent>
 )
 

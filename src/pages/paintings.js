@@ -26,6 +26,7 @@ import sbr from '../images/paintings/sbrntsbr.png'
 import elephant from '../images/paintings/elephant_print.jpg'
 import plangeneva from '../images/paintings/plangeneva.jpg'
 import endofline from '../images/paintings/endofline.jpg'
+import serpent from '../images/paintings/serpent.jpg'
 
 const imageStyle = (src) => {
     return (
@@ -43,9 +44,10 @@ const imageStyle = (src) => {
 
 const images = [
 
-    [scorpio, "Scorpio", "scorpio"],
     [sbr, "Untitled", "untitled"],
+    [scorpio, "Scorpio", "scorpio"],
     [endofline, "End of line", "endofline"],
+    [serpent, "Serpent", "serpent"],
     [plangeneva, "Plangeneva", "plangeneva"],
     [elephant, "elephant", "elephant"],
     [taurus, "Taurus", "taurus"],
